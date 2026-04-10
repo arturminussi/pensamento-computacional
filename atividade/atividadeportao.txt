@@ -1,0 +1,52 @@
+oq o sistema deve fazer:
+sincronizar o led com o botao correspodente ao portao
+girar servo 9 = 0 gruas
+girar servo 8 = 0 graus
+botao1=pino 10
+botao2=pino 11
+botao3=pino 12
+botao4=pino 13
+
+se botao1=1
+definir pino 2=baixo
+definir pino 7=baixo
+definir pino 5=baixo
+definir pino 4=alto
+definir pino 3=alto
+girar servo 9 = 90 graus
+aguardar 0.5 segundos
+
+se botao2=1
+definir pino 6=baixo
+definir pino 2=baixo
+definir pino 4=baixo
+definir pino 7=alto
+definir pino 3=alto
+girar servo 8= 90 graus
+aguardar 0.5 segundos
+definir pino 3=baixo
+definir pino 5=alto
+
+se botao3
+definir pino 4=baixo
+definir pino 5=baixo
+definir pino 6=baixo
+definir pino 7=baixo
+girar servo 8 = 90 graus
+girar servo 9 = 90 graus
+definir pino 3=alto
+aguardar 5 segundos
+definir pino 3=baixo
+definir pino 2=alto
+
+se botao4
+definir pino 2=baixo
+definir pino 5=baixo 
+definir pino 6=baixo
+definir pino 3=alto
+girar servo 8 = 0 graus
+girar servo 9 = 0 graus
+aguardar 1 segundo
+defnir pino 3=baixo
+definir pino 7=alto
+definir pino 4=alto
